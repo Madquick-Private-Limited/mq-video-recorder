@@ -1,0 +1,60 @@
+#mq-video-root .mqvm-card { border:1px solid #e5e7eb; border-radius:8px; padding:16px; background:#fff;  }
+#mq-video-root .mqvm-title { margin:0 0 8px; }
+
+/* preview + HUD */
+#mq-video-root .mqvm-preview-wrap { margin-bottom: 12px; }
+#mq-video-root .mqvm-video-shell { position:relative; border-radius:8px; overflow:hidden; background:#000; }
+#mq-video-root .mqvm-live { width:100%; max-width:100%; display:block; aspect-ratio:16/9; }
+
+#mq-video-root .mqvm-overlay { position:absolute; inset:0; pointer-events:none; display:flex; flex-direction:column; }
+#mq-video-root .mqvm-topbar { display:flex; align-items:center; gap:8px; padding:8px 10px; color:#fff; }
+#mq-video-root .mqvm-dot { width:10px; height:10px; border-radius:50%; background:#ef4444; box-shadow:0 0 0 0 rgba(239,68,68,0.7); animation: mqvm-ping 1.3s infinite; }
+#mq-video-root .mqvm-spacer { flex:1; }
+#mq-video-root #mqvm-timer { font-weight:600; }
+#mq-video-root #mqvm-size { opacity:0.9; }
+
+@keyframes mqvm-ping {
+  0% { box-shadow:0 0 0 0 rgba(239,68,68,0.7); }
+  70% { box-shadow:0 0 0 8px rgba(239,68,68,0); }
+  100% { box-shadow:0 0 0 0 rgba(239,68,68,0); }
+}
+
+#mq-video-root .mqvm-controls { display:flex; gap:8px; margin-top:10px; }
+#mq-video-root .mqvm-hint { margin:6px 0 0; color:#4b5563; }
+
+/* confirm row below same frame */
+#mq-video-root .mqvm-confirm { display:none; gap:8px; align-items:center; margin-top:8px; }
+#mq-video-root .mqvm-meta { margin-left:auto; font-size:12px; color:#4b5563; }
+
+#mq-video-root .mqvm-sep { margin:16px 0; }
+#mq-video-root .mqvm-upload-row { display:flex; gap:8px; align-items:center; margin-bottom: 12px; }
+
+#mq-video-root .mqvm-progress { width:100%; height:8px; background:#f3f4f6; border-radius:6px; overflow:hidden; margin:8px 0 }
+#mq-video-root #mqvm-bar { height:100%; width:0%; background:#2271b1; transition:width .25s; }
+
+#mq-video-root .mqvm-row { display:flex; align-items:center; justify-content:space-between; border:1px solid #e5e7eb; border-radius:8px; padding:10px; margin:8px 0 }
+#mq-video-root .mqvm-title { font-weight:600 }
+#mq-video-root .mqvm-sub { font-size:12px; color:#6b7280 }
+#mq-video-root .mqvm-row-actions { display:flex; gap:8px }
+
+#mqvm-file {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #3d3d3d2e;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.mqvm-quota {
+    margin: 16px 0;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px dashed #3d3d3d2e;
+}
+
+.mqvm-row-title{
+    font-weight: 600;
+    margin-top: 36px;
+    text-align: center;
+}
